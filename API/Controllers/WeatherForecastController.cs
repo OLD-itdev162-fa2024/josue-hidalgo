@@ -49,9 +49,9 @@ public class WeatherForecastController : ControllerBase
         };
 
         _context.WeatherForecasts.Add(forecast);
-        var sucess = _context.SaveChanges() > 0;
+        var success = _context.SaveChanges() > 0;
 
-        if(sucess)
+        if(success)
         {
             return forecast;
         }
